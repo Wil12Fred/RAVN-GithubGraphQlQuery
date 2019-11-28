@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        android:layout_margin="8dp"
+
+>
+
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout
+                android:id="@+id/topRepoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentTop="true"
+                android:background="@color/colorPrimaryDark"
+        >
+            <TextView
+                    android:id="@+id/ownerRepoTextView"
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="owner"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="@dimen/text_margin"
+                    android:textAppearance="?attr/textAppearanceListItem"/>
+        </RelativeLayout>
+        <RelativeLayout
+                android:id="@+id/bottomRepoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/topRepoLayout"
+                android:background="@color/colorGrey"
+        >
+            <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/studentRepoPic"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="4dp"
+                android:visibility="gone"
+                    android:layout_alignParentStart="true"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" app:srcCompat="@mipmap/ic_launcher_round"/>
+            <TextView
+                    android:id="@+id/nameRepoTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit ="marquee_forever"
+                    android:singleLine="true"
+                    android:layout_margin="@dimen/text_margin"
+                    android:layout_toRightOf = "@id/studentRepoPic"
+                    android:textAppearance="?attr/textAppearanceListItem"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/descripcionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/bottomRepoLayout"
+            android:background="@color/white">
+            <TextView
+                android:id="@+id/descripcionRepoTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit ="marquee_forever"
+                android:singleLine="true"
+                android:layout_margin="@dimen/text_margin"
+                android:text="Descripcion"
+                android:layout = "@id/studentPic"
+                android:textAppearance="?attr/textAppearanceListItem"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

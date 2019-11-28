@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        android:layout_margin="8dp"
+
+>
+
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout
+                android:id="@+id/topLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentTop="true"
+                android:background="@color/colorPrimaryDark"
+        >
+            <TextView
+                    android:id="@+id/groupTextView"
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="@dimen/text_margin"
+                    android:textAppearance="?attr/textAppearanceListItem"/>
+
+            <TextView
+                    android:id="@+id/percTextView"
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/text_margin"
+                    android:padding="4dp"
+                    android:background="@color/colorAccent"
+                    android:textAppearance="?attr/textAppearanceListItem"/>
+        </RelativeLayout>
+        <RelativeLayout
+                android:id="@+id/bottomLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/topLayout"
+                android:background="@color/colorGrey"
+        >
+            <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/studentPic"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="4dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" app:srcCompat="@mipmap/ic_launcher_round"/>
+
+            <TextView
+                    android:id="@+id/nameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit ="marquee_forever"
+                    android:singleLine="true"
+                    android:layout_margin="@dimen/text_margin"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@+id/studentPic"
+                    android:layout_toLeftOf="@id/estadoTextView"
+                    android:textAppearance="?attr/textAppearanceListItem"/>
+            <TextView
+                    android:id="@+id/estadoTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit ="marquee_forever"
+                    android:singleLine="true"
+                    android:layout_margin="@dimen/text_margin"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@id/stateButton"
+                    android:textAppearance="?attr/textAppearanceListItem"/>
+
+            <ImageButton
+                    android:id="@+id/stateButton"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="8dp"
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

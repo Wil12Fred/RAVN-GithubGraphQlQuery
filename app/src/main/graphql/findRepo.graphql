@@ -1,0 +1,45 @@
+query FindRepoQuery($owner:String!,$name:String!){
+  repository(owner:$owner, name:$name) {
+    name
+    description
+    forkCount
+    url
+  }
+}
+
+query ListUserQuery($owner:String!, $pagesize:Int!) {
+  search(query: $owner, type: USER, first: $pagesize) {
+    pageInfo{
+      endCursor
+      startCursor
+    }
+    edges{
+      node {
+        ...profile
+      }
+    }
+  }
+}
+
+query ListUserAfterQuery($owner:String!, $after:String!, $pagesize:Int!) {
+  search(query: $owner, type: USER, first: $pagesize after: $after) {
+    pageInfo{
+      endCursor
+      startCursor
+    }
+    edges{
+      node {
+        ...profile
+      }
+    }
+  }
+}
+
+fragment profile on User{
+  name
+  login
+  id
+  __typename
+  url
+  avatarUrl
+}

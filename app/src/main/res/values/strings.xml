@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">Ravn</string>
+
+    <string name="repository_name">Repository Name</string>
+    <string name="owner_name_hint">Owner Name</string>
+    <string name="button_text">Search</string>
+    <string name="name_text">Name: %1$s</string>
+    <string name="description_text">Description: %1$s</string>
+    <string name="fork_count_text">Fork Count: %1$s</string>
+    <string name="url_count_text">URL: %1$s</string>
+
+    <!-- film -->
+    <string name="opening_crawl">Opening Crawl</string>
+    <string name="release_date">Release Date</string>
+    <string name="director">Director</string>
+    <string name="producer">Producer(s)</string>
+    <string name="edited">Edited</string>
+
+    <!-- people -->
+    <string name="species">Species</string>
+    <string name="height">Height</string>
+    <string name="mass">Mass</string>
+    <string name="hair_color">Hair</string>
+    <string name="skin_color">Skin</string>
+    <string name="eye_color">Eyes</string>
+    <string name="dob">DoB</string>
+    <string name="gender">Gender</string>
+    <string name="homeworld">Home World</string>
+
+    <!-- planet -->
+    <string name="rotation_period">Rotation</string>
+    <string name="orbital_period">Orbit</string>
+    <string name="diameter">Diameter</string>
+    <string name="climate">Climate</string>
+    <string name="gravity">Gravity</string>
+    <string name="terrain">Terrain</string>
+    <string name="surface_water">Surface Water</string>
+    <string name="population">Population</string>
+
+    <!-- species -->
+    <string name="classification">Classification</string>
+    <string name="designation">Designation</string>
+    <string name="average_height">Avg Height</string>
+    <string name="skin_colors">Skin</string>
+    <string name="hair_colors">Hair</string>
+    <string name="eye_colors">Eyes</string>
+    <string name="average_lifespan">Avg Lifespan</string>
+    <string name="language">Language</string>
+
+    <!-- starship / vehicle -->
+    <string name="model">Model</string>
+    <string name="starship_class">Class</string>
+    <string name="manufacturer">Manufacturer</string>
+    <string name="cost_in_credits">Price</string>
+    <string name="length">Length</string>
+    <string name="cargo_capacity">Cargo Capacity</string>
+    <string name="crew">Crew</string>
+    <string name="passengers">Passengers</string>
+    <string name="consumables">Consumables</string>
+    <string name="hyperdrive_rating">Hyperdrive Class</string>
+    <string name="mglt">MGLT</string>
+    <string name="max_atmosphering_speed">Land/Air Speed</string>
+
+
+    <plurals name="result_count">
+        <item quantity="one">%1$d result for \"%2$s\".</item>
+        <item quantity="other">%1$d results for \"%2$s\".</item>
+    </plurals>
+
+    <plurals name="producers_count">
+        <item quantity="one">Producer</item>
+        <item quantity="other">Producers</item>
+    </plurals>
+
+    <string name="search_delay_message">Searching…</string>
+    <string name="search_error">Ugh, search error.</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="retry">Retry</string>
+
+    <string name="unknown">unknown</string>
+    <string name="detail_na">n/a</string>
+
+    <string name="error_message">Unable to get %s. Please try later.</string>
+    <string name="search_error_message">Unable to search for \"%s\". Please try later.</string>
+
+    <string name="detail_date_format">MMM d, yyyy</string>
+    <string name="detail_height_cm">%s cm</string>
+    <string name="detail_length_m">%s m</string>
+    <string name="detail_mass_kg">%s kg</string>
+    <string name="detail_period_days">%s days</string>
+    <string name="detail_distance_km">%s km</string>
+    <string name="detail_percent">%s%%</string>
+    <string name="detail_duraction_years">%s years</string>
+    <string name="detail_tonnage">%s metric tons</string>
+    <string name="detail_credits">%s CR</string>
+    <string name="detail_speed_kph">%s kph</string>
+    <string name="search_query_hint">Search %s…</string>
+    <!--<string name="link_text"><![CDATA[<u>%s</u>]]></string>-->
+    <string name="episode_number">Episode %s:</string>
+    <string name="episode_title">Episode %1$s: %2$s</string>
+    <string name="episode_title_formatted"><![CDATA[Episode %1$s: <b>%2$s</b>]]></string>
+    <string name="link_text"><![CDATA[<font color=\'%1$d\'><u>%2$s</u></font>]]></string>
+</resources>

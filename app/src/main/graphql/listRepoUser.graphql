@@ -1,0 +1,69 @@
+query ListRepoUserQuery($owner:String!, $pagesize:Int!) {
+    search(query: $owner, type: REPOSITORY, first: $pagesize) {
+        repositoryCount
+        pageInfo{
+            endCursor
+            startCursor
+        }
+        edges {
+            node {
+                ...repo
+            }
+        }
+    }
+}
+
+query ListRepoAfterUserQuery($owner:String!,$after:String!,$pagesize:Int!) {
+    search(query: $owner, type: REPOSITORY, first: $pagesize after: $after) {
+        repositoryCount
+        pageInfo{
+            endCursor
+            startCursor
+        }
+        edges {
+            node {
+                ...repo
+            }
+        }
+    }
+}
+
+fragment repo on Repository {
+    id
+    name
+    createdAt
+    description
+    isArchived
+    isPrivate
+    url
+    owner{
+        login
+        id
+        __typename
+        url
+    }
+    assignableUsers{
+        totalCount
+    }
+    licenseInfo{
+        key
+    }
+    defaultBranchRef{
+        target{
+            ...commitHistory
+        }
+    }
+}
+
+fragment commitHistory on Commit {
+    history(first:10){
+        totalCount
+        edges{
+            node{
+                ... on Commit{
+                    committedDate
+                }
+            }
+        }
+    }
+}
