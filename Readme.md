@@ -7,7 +7,7 @@ Abrir con Android Studio
 ## Update
  En actualizar variable AUTH_APOLLO en: /app/src/main/java/com/example/ravn/utilities/Constants.kt
  
- AUTH_APOLLO = <OAUTH ACCES TOKEN>
+ AUTH_APOLLO = ``OAUTH ACCES TOKEN``
   
  obtener token en https://github.com/settings/tokens
  
