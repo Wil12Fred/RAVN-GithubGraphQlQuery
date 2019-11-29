@@ -18,4 +18,4 @@ AndroidStudio-Kotlin
 
 # Author
 
-* ***Wilber Cuutire** - [Wil12Fred](https://github.com/wil12fred)
+* ***Wilber Cutire** - [Wil12Fred](https://github.com/wil12fred)
