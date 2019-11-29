@@ -1,4 +1,4 @@
-# Installation
+# Installación
 
 Clonar este repositorio.
 
